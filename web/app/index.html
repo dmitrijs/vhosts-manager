@@ -10,7 +10,7 @@
 Current vhosts:
 <ul>
 	<li ng-repeat="vh in vhosts">
-		Path: {{ vh.path }}, ServerName: {{ vh.server_name }}
+		<button ng-click="deleteHost(vh.nn)">X</button> Path: {{ vh.path }}, ServerName: {{ vh.server_name }}
 	</li>
 </ul>
 
@@ -18,7 +18,7 @@ Current vhosts:
 	Add vhost: <br/>
 	Path: <input type="text" ng-model="formData.path"/><br/>
 	ServerName: <input type="text" ng-model="formData.server_name"><br/>
-	<button type="submit" ng-click="add()">Add</button>
+	<button type="submit" ng-click="addHost()">Add</button>
 </form>
 
 <div>App version: v<span app-version></span></div>

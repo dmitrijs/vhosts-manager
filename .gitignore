@@ -1,4 +1,5 @@
 /composer.lock
+/web/backup/
 /web/vendor
 /web/test.conf
 /vhosts-manager.iws
